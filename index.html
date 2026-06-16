@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senthil Kumar K | ECE & Embedded Systems Portfolio</title>
+    <meta name="description" content="Professional portfolio of Senthil Kumar K, an ECE student specializing in Embedded Systems, IoT, AI, and Automation. View projects, experience, and patent achievements.">
+    <meta name="keywords" content="Senthil Kumar K, ECE, Embedded Systems, IoT, SNS College of Technology, Smart Glove Patent, Portfolio, Recruiter">
+    <meta name="author" content="Senthil Kumar K">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Senthil Kumar K | ECE Portfolio">
+    <meta property="og:description" content="Recruiter-focused portfolio of Senthil Kumar K, ECE Student & Patent Holder.">
+    <meta property="og:image" content="profile.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Senthil Kumar K | ECE Portfolio">
+    <meta property="twitter:description" content="Recruiter-focused portfolio of Senthil Kumar K.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Loading Animation -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="circuit-spinner"></div>
+            <div class="loader-text">Loading Profile<span class="dots">...</span></div>
+        </div>
+    </div>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header / Sticky Navigation Bar -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>Senthil<span class="logo-accent">.K /&gt;</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+                    <li><a href="#timeline" class="nav-link" id="link-timeline">Journey</a></li>
+                    <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+                    <li><a href="#patent" class="nav-link" id="link-patent">Patents</a></li>
+                    <li><a href="#certifications" class="nav-link" id="link-certifications">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="glow-tag text-reveal">Recruiter-Focused Space</div>
+                    <h1 class="hero-name text-reveal">Senthil Kumar K</h1>
+                    <h2 class="hero-title text-reveal">
+                        I'm an <span class="typing-text" id="typewriter-text"></span>
+                    </h2>
+                    <p class="hero-tagline text-reveal">
+                        Passionate ECE Student | Embedded Systems | IoT | AI & Machine Learning | Communication Networks. Dedicated to linking intelligent algorithms with responsive hardware systems.
+                    </p>
+                    <div class="hero-cta text-reveal">
+                        <a href="resume.pdf" download="Senthil_Kumar_K_Resume.pdf" class="btn btn-primary" id="btn-hero-resume">
+                            <i class="fa-solid fa-file-arrow-down"></i> <span>Download Resume</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container">
+                    <div class="profile-glow-ring"></div>
+                    <div class="profile-image-wrapper card-tilt">
+                        <img src="profile.jpg" alt="Senthil Kumar K Profile" class="profile-image" id="profile-img">
+                        <div class="profile-card-overlay">
+                            <span class="overlay-name">Senthil Kumar K</span>
+                            <span class="overlay-major">ECE Student & Patent Holder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">01. Candidate Overview</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="header-underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text scroll-reveal">
+                        <p>
+                            I am an **Electronics and Communication Engineering student** with a strong interest in Embedded Systems, IoT, Automation, Artificial Intelligence, and Communication Technologies. I enjoy building innovative solutions that solve real-world problems and continuously strive to enhance my technical and professional skills.
+                        </p>
+                        <p>
+                            With an engineering background that spans structural design, automation coding, and manufacturing machinery, I bring a unique blend of practical **hands-on hardware assembly** and **smart embedded programming**.
+                        </p>
+                        <p>
+                            My goal is to design efficient, low-power telemetry nodes, smart edge controllers, and automated frameworks that simplify industrial operations and improve human accessibility.
+                        </p>
+                        
+                        <div class="languages-box">
+                            <h4 class="languages-title">Languages Spoken:</h4>
+                            <div class="language-tags">
+                                <span class="lang-tag"><i class="fa-solid fa-earth-asia"></i> Tamil (Native)</span>
+                                <span class="lang-tag"><i class="fa-solid fa-comments"></i> English (Professional)</span>
+                                <span class="lang-tag"><i class="fa-solid fa-pen-fancy"></i> German (Read & Write)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats scroll-reveal">
+                        <div class="stat-card">
+                            <span class="stat-num">1</span>
+                            <span class="stat-label">Released Patent</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">3+</span>
+                            <span class="stat-label">Core Hardware Projects</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">2 Years</span>
+                            <span class="stat-label">Industrial Experience</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">7.5</span>
+                            <span class="stat-label">B.E. CGPA Score</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section with Progress Bars -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">02. Technical Capabilities</span>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="header-underline"></div>
+                </div>
+
+                <div class="skills-category-grid">
+                    <!-- Column 1: Technical & Design Skills -->
+                    <div class="skill-category-card scroll-reveal">
+                        <h3><i class="fa-solid fa-microchip"></i> Technical & Design Skills</h3>
+                        <div class="skill-bars-list">
+                            <!-- Skill 1 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Embedded Systems & IoT</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 2 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python Programming</span>
+                                    <span class="skill-pct">80%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 3 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C Programming</span>
+                                    <span class="skill-pct">75%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="75%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 4 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SolidWorks (3D Design)</span>
+                                    <span class="skill-pct">80%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 5 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Verilog HDL</span>
+                                    <span class="skill-pct">70%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="70%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 6 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Eagle (PCB Design)</span>
+                                    <span class="skill-pct">75%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="75%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 7 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Machine Learning Fundamentals</span>
+                                    <span class="skill-pct">70%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Software Tools & Soft Skills -->
+                    <div class="skill-category-card scroll-reveal">
+                        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Software, Tools & Soft Skills</h3>
+                        <div class="skill-bars-list">
+                            <!-- Skill 1 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MATLAB & Simulation</span>
+                                    <span class="skill-pct">75%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="75%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 2 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MPLAB X IDE</span>
+                                    <span class="skill-pct">80%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 3 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">GitHub & Version Control</span>
+                                    <span class="skill-pct">80%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 4 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Problem Solving & Adaptability</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 5 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Teamwork & Communication</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 6 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Time Management</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill 7 -->
+                            <div class="skill-bar-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Microsoft Excel</span>
+                                    <span class="skill-pct">75%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Combined Education & Experience timelines -->
+        <section id="timeline" class="timeline-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">03. Career History</span>
+                    <h2 class="section-title">Education & Work Experience</h2>
+                    <div class="header-underline"></div>
+                </div>
+
+                <div class="dual-timeline-grid">
+                    <!-- Left Timeline: Education -->
+                    <div class="timeline-column scroll-reveal">
+                        <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                        <div class="sub-timeline">
+                            
+                            <!-- B.E. Card -->
+                            <div class="sub-timeline-item">
+                                <div class="sub-timeline-dot"></div>
+                                <div class="sub-timeline-date">2023 - 2027</div>
+                                <div class="sub-timeline-content">
+                                    <h4 class="edu-degree">Bachelor of Engineering (ECE)</h4>
+                                    <p class="edu-inst">SNS College of Technology</p>
+                                    <div class="timeline-score-badge">CGPA: 7.5</div>
+                                </div>
+                            </div>
+
+                            <!-- Diploma Card -->
+                            <div class="sub-timeline-item">
+                                <div class="sub-timeline-dot"></div>
+                                <div class="sub-timeline-date">2019 - 2022</div>
+                                <div class="sub-timeline-content">
+                                    <h4 class="edu-degree">Diploma in Engineering</h4>
+                                    <p class="edu-inst">Sri Ranganathar Institute of Polytechnic College</p>
+                                    <div class="timeline-score-badge">Percentage: 86%</div>
+                                </div>
+                            </div>
+
+                            <!-- SSLC Card -->
+                            <div class="sub-timeline-item">
+                                <div class="sub-timeline-dot"></div>
+                                <div class="sub-timeline-date">Graduated 2019</div>
+                                <div class="sub-timeline-content">
+                                    <h4 class="edu-degree">SSLC Secondary Schooling</h4>
+                                    <p class="edu-inst">Government High School</p>
+                                    <div class="timeline-score-badge">Percentage: 58%</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right Timeline: Work Experience -->
+                    <div class="timeline-column scroll-reveal">
+                        <h3 class="column-title"><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+                        <div class="sub-timeline">
+
+                            <!-- Job 1 -->
+                            <div class="sub-timeline-item">
+                                <div class="sub-timeline-dot experience-dot"></div>
+                                <div class="sub-timeline-date">October 2022 - May 2024</div>
+                                <div class="sub-timeline-content">
+                                    <h4 class="work-role">Machine Operator</h4>
+                                    <p class="work-company">Js Autocast India Pvt Ltd</p>
+                                    <ul class="work-tasks">
+                                        <li>Operated advanced Mazak and DMG machining systems.</li>
+                                        <li>Performed high-precision quality inspections of products.</li>
+                                        <li>Used ERP manufacturing database systems for production tracking.</li>
+                                        <li>Optimized machine cycles to ensure quality and timeline efficiency.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Job 2 -->
+                            <div class="sub-timeline-item">
+                                <div class="sub-timeline-dot experience-dot"></div>
+                                <div class="sub-timeline-date">June 2022 - October 2022</div>
+                                <div class="sub-timeline-content">
+                                    <h4 class="work-role">Machine Operator</h4>
+                                    <p class="work-company">Water Tec India Pvt Ltd</p>
+                                    <ul class="work-tasks">
+                                        <li>Handled high-volume assembly and fabrication of bathroom fittings.</li>
+                                        <li>Executed regular structural quality testing and inspections.</li>
+                                        <li>Provided general machine maintenance and calibration support.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">04. Engineering Portfolio</span>
+                    <h2 class="section-title">Selected Projects</h2>
+                    <div class="header-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 (Patented Smart Glove) -->
+                    <article class="project-card patent-featured scroll-reveal">
+                        <div class="project-image-box">
+                            <i class="fa-solid fa-hand-sparkles project-default-icon"></i>
+                            <div class="project-badge">Patented Idea</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Glove for Paralyzed Patients</h3>
+                            <p class="project-desc">
+                                Developed an assistive tech smart glove featuring custom sensors and microcontrollers that converts fine finger and hand motions into electrical signals to control communication screens and smart home appliances, increasing mobility for paralyzed individuals.
+                            </p>
+                            <div class="project-tech">
+                                <span>Sensors</span>
+                                <span>Microcontrollers</span>
+                                <span>Embedded Systems</span>
+                                <span>Assistive Tech</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/senthil306-sm" target="_blank" rel="noopener" class="btn-project-link" id="btn-project-glove-github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="#patent" class="btn-project-link btn-project-demo" id="btn-project-glove-patent">
+                                    <i class="fa-solid fa-certificate"></i> View Patent
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 (Automated Speed Control) -->
+                    <article class="project-card scroll-reveal">
+                        <div class="project-image-box">
+                            <i class="fa-solid fa-gauge-high project-default-icon"></i>
+                            <div class="project-badge">Automation</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Automated Speed Control System</h3>
+                            <p class="project-desc">
+                                Designed a closed-loop DC motor speed regulation system using feedback sensors and a microcontroller to automatically correct shaft velocity under shifting physical load constraints.
+                            </p>
+                            <div class="project-tech">
+                                <span>Sensors</span>
+                                <span>Motor Control</span>
+                                <span>Microcontrollers</span>
+                                <span>PID Logic</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/senthil306-sm" target="_blank" rel="noopener" class="btn-project-link" id="btn-project-speed-github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="#" target="_blank" rel="noopener" class="btn-project-link btn-project-demo" id="btn-project-speed-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 (Gas Spring Trolley) -->
+                    <article class="project-card scroll-reveal">
+                        <div class="project-image-box">
+                            <i class="fa-solid fa-dolly project-default-icon"></i>
+                            <div class="project-badge">Mechanical Design</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Automated Gas Spring Trolley</h3>
+                            <p class="project-desc">
+                                Engineered an automated gas spring logistics trolley in SolidWorks for heavy industrial material handling. The design minimizes user strain by absorbing lifting momentum through pressurized pneumatic pistons.
+                            </p>
+                            <div class="project-tech">
+                                <span>SolidWorks</span>
+                                <span>Automation</span>
+                                <span>Gas Spring System</span>
+                                <span>Industrial Safety</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/senthil306-sm" target="_blank" rel="noopener" class="btn-project-link" id="btn-project-trolley-github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="#" target="_blank" rel="noopener" class="btn-project-link btn-project-demo" id="btn-project-trolley-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Patent Highlight Section -->
+        <section id="patent" class="patent-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">05. Intellectual Property</span>
+                    <h2 class="section-title">Patent Highlights</h2>
+                    <div class="header-underline"></div>
+                </div>
+
+                <div class="patent-showcase-card scroll-reveal">
+                    <div class="patent-icon-wrapper">
+                        <i class="fa-solid fa-ribbon"></i>
+                    </div>
+                    <div class="patent-details-content">
+                        <span class="patent-status-badge"><i class="fa-solid fa-check-double"></i> PATENT RELEASED</span>
+                        <h3 class="patent-card-title">Smart Glove for Paralyzed Patients</h3>
+                        <p class="patent-card-desc">
+                            An assistive technology innovation designed to bridge physical motor disabilities with digital control frameworks. By integrating highly responsive bending/flex sensors and microcontrollers on a wearable glove form-factor, the system identifies distinct gesture movements, converting analog inputs to machine commands. 
+                        </p>
+                        <p class="patent-card-subdesc">
+                            This allows paralyzed patients to operate wireless call systems, toggle room lighting, and trigger speaker synthesizers with simple hand movements, restoring personal accessibility and independence.
+                        </p>
+                        <div class="patent-specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Inventors:</span>
+                                <span class="spec-value">Senthil Kumar K</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Field:</span>
+                                <span class="spec-value">Assistive Devices & Bio-Electronics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Certifications Section -->
+        <section id="certifications" class="certifications-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">06. Certifications</span>
+                    <h2 class="section-title">Professional Training & Credentials</h2>
+                    <div class="header-underline"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card scroll-reveal">
+                        <div class="cert-icon"><i class="fa-brands fa-microsoft"></i></div>
+                        <h3 class="cert-title">Microsoft Azure Fundamentals</h3>
+                        <p class="cert-desc">Core cloud computing concepts, Azure services, database management, security principles, and privacy operations.</p>
+                        <span class="cert-year">2025</span>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card scroll-reveal">
+                        <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+                        <h3 class="cert-title">AWS Machine Learning Foundations</h3>
+                        <p class="cert-desc">Underlying cloud ML pipelines, data preparation models, computer vision APIs, and training datasets on AWS SageMaker.</p>
+                        <span class="cert-year">2025</span>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card scroll-reveal">
+                        <div class="cert-icon"><i class="fa-solid fa-snowflake"></i></div>
+                        <h3 class="cert-title">SnowPro Associate</h3>
+                        <p class="cert-desc">Detailed warehousing concepts, Snowflake core architecture, scalable database queries, and virtual computing layers.</p>
+                        <span class="cert-year">Certified</span>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card scroll-reveal">
+                        <div class="cert-icon"><i class="fa-brands fa-salesforce"></i></div>
+                        <h3 class="cert-title">Agentforce Specialist</h3>
+                        <p class="cert-desc">Credential in deploying Salesforce Agentforce framework, creating intelligent automated agents, and CRM action flows.</p>
+                        <span class="cert-year">Salesforce</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">07. Recruiters Panel</span>
+                    <h2 class="section-title">Contact Information</h2>
+                    <div class="header-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info Column -->
+                    <div class="contact-info scroll-reveal">
+                        <h3>Connect with Senthil</h3>
+                        <p>
+                            If you have job openings, internship opportunities, or want to discuss my smart glove patent, please reach out to me! I am highly motivated to join a collaborative ECE/software team.
+                        </p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <i class="fa-solid fa-phone info-icon"></i>
+                                <div>
+                                    <h4>Phone Number</h4>
+                                    <a href="tel:+919715515761" id="phone-link">+91 9715515761</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-envelope info-icon"></i>
+                                <div>
+                                    <h4>Email Address</h4>
+                                    <a href="mailto:senthilsk2699@gmail.com" id="mail-link">senthilsk2699@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-brands fa-linkedin-in info-icon"></i>
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/senthil-kumar-k-9b0123303" target="_blank" rel="noopener" id="linkedin-link">senthil-kumar-k-9b0123303</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-brands fa-github info-icon"></i>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/senthil306-sm" target="_blank" rel="noopener" id="github-link">senthil306-sm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Column -->
+                    <div class="contact-form-wrapper scroll-reveal">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Full Name</label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="form-name" name="name" required placeholder="Enter your name">
+                                    <span class="focus-border"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="form-email" name="email" required placeholder="Enter your email">
+                                    <span class="focus-border"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <div class="input-wrapper">
+                                    <textarea id="form-message" name="message" required rows="5" placeholder="Write your message here..."></textarea>
+                                    <span class="focus-border"></span>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-contact">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">&lt;Senthil.K /&gt;</a>
+                <p>ECE Student &amp; Patent Holder</p>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/senthil-kumar-k-9b0123303" target="_blank" rel="noopener" aria-label="LinkedIn" id="footer-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/senthil306-sm" target="_blank" rel="noopener" aria-label="GitHub" id="footer-github"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:senthilsk2699@gmail.com" aria-label="Email" id="footer-email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2026 Senthil Kumar K. All rights reserved.</p>
+                <p class="footer-subtext">Designed & Built with <i class="fa-solid fa-heart animate-heart"></i> & Glassmorphism</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button with Scroll Progress -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <svg class="progress-ring" width="48" height="48">
+            <circle class="progress-ring__circle" stroke="#00D4FF" stroke-width="3" fill="transparent" r="21" cx="24" cy="24"/>
+        </svg>
+        <i class="fa-solid fa-arrow-up arrow-icon"></i>
+    </button>
+
+    <!-- Toast Notification container -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fa-solid fa-circle-check toast-icon"></i>
+            <div class="toast-details">
+                <span class="toast-title">Message Sent!</span>
+                <span class="toast-msg">Thank you, I'll get back to you soon.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
